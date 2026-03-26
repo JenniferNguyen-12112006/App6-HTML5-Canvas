@@ -45,31 +45,56 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	<style>	
 	.body {
     	 margin: 0em;
+		text-align: center;
 	}
 	/* Canvas Styling */
 	#myCanvas {
-		border: 1px solid #000000
+		border: 1px solid #000000;
     	width: 100vw;
 		background-color: #ffffff;
 		display: block;
 		margin: 10px auto; /* Centers the canvas */
 		max-width: 100%; /* Keeps from overflowing */
 	}
+	button {
+		margin: 5px;
+		padding: 10px;
+	}
 	</style>
 
 	<script>
 	// This function draws a rectangle 
-	function draw_rect() {
+	function drawRect() {
 		var canvas = document.getElementById("myCanvas");
 		var ctx = canvas.getContext("2d"); 
-		ctx.fillstyle = "#000080"; // navy blue 
-
+		
+		ctx.fillStyle = "#000080"; // navy blue 
+		ctx.fillRect(50, 50, 150,100);
+	}
+	//This function draws name 
+	function drawText() {
+		ctx.fillStyle = "pink";
+		ctx.fillText("Jennifer Nguyen", 50, 200);
+	}
+	//This function draws image
+	function drawImageOnCanvas() {
+		var img = new Image();
+		img.src = https: "dog.jpg";
+		img.onload = function() {
+			ctx.drawImage(img, 75, 220, 150, 150);
+		};
+	}
+	//This function clears canvas
+	function clearCanvas() {
+		ctx.clearRect(0, 0, canvas,width, canvas.height);
+	}
+</script>
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
 	<h1>App6---HTML5-Canvas</h1>
 </div>
 	
-<div id="content" class="w3-container">
+<div id="content" class="w3-container">	
 	<p>Canvas Demo:</p>
 	
 	<!-- CANVAS -->
