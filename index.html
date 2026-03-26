@@ -7,7 +7,7 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
 Authors in chronological order of contribution:
 Tim Riedel
-Author 2
+Jennifer Nguyen
  
 Further Information:
 http://cns.utexas.edu/fri
@@ -42,25 +42,27 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 
 
-<style>	
-.body {
-     margin: 0em;
-}
-.page {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: -100vw;
-    overflow-y: auto;
-    z-index: 0;
-    background-color: hsl(0,0%,100%);
-}
-  .page:target {
-    left: 0vw;
-    z-index: 1;
-}
-</style>
+	<style>	
+	.body {
+    	 margin: 0em;
+	}
+	/* Canvas Styling */
+	#myCanvas {
+		border: 1px solid #000000
+    	width: 100vw;
+		background-color: #ffffff;
+		display: block;
+		margin: 10px auto; /* Centers the canvas */
+		max-width: 100%; /* Keeps from overflowing */
+	}
+	</style>
+
+	<script>
+	// This function draws a rectangle 
+	function draw_rect() {
+		var canvas = document.getElementById("myCanvas");
+		var ctx = canvas.getContext("2d"); 
+		ctx.fillstyle = "#000080"; // navy blue 
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
