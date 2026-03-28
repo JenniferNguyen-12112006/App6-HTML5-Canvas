@@ -58,8 +58,8 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 	<script>
 	//Define variables globally 
-	canvas;
-	ctx;
+	var canvas;
+	var ctx;
 
 	//Initializes canvas and context once page finishes loading
 	window.onload = function() {
@@ -74,7 +74,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	//This function draws name 
 	function drawText() {
 		ctx.font = "20px Arial"; // makes text big enough to see
-		ctx.fillStyle = "pink";
+		ctx.fillStyle = "hotpink";
 		ctx.fillText("Jennifer Nguyen", 50, 200);
 	}
 	//This function draws image
