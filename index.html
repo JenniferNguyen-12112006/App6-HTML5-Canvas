@@ -17,10 +17,10 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+Fix the HTML code.
  
 Known Issues:
-blah, blah, blah, blah
+The wrong code kep forming or something on my website would not load.
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
@@ -64,11 +64,16 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 	<script>
 	//Define variables globally 
-	// This function draws a rectangle 
-	function drawRect() {
+	var canvas;
+	var ctx;
+
+	//Initializes canvas and context once page finishes loading
+	window.onload = function() {
 		var canvas = document.getElementById("myCanvas");
 		var ctx = canvas.getContext("2d"); 
-		
+	};
+	// This function draws a rectangle 
+	function drawRect() {
 		ctx.fillStyle = "#000080"; // navy blue 
 		ctx.fillRect(50, 50, 150,100);
 	}
@@ -80,7 +85,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	//This function draws image
 	function drawImageOnCanvas() {
 		var img = new Image();
-		img.src = https: "dog.jpg";
+		img.src = https: "unsplash-funny-golden-retriever-side-eye-richard-burlton.jpg";
 		img.onload = function() {
 			ctx.drawImage(img, 75, 220, 150, 150);
 		};
