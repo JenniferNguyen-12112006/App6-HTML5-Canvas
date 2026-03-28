@@ -69,8 +69,8 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 	//Initializes canvas and context once page finishes loading
 	window.onload = function() {
-		var canvas = document.getElementById("myCanvas");
-		var ctx = canvas.getContext("2d"); 
+		canvas = document.getElementById("myCanvas");
+		ctx = canvas.getContext("2d"); 
 	};
 	// This function draws a rectangle 
 	function drawRect() {
@@ -85,14 +85,14 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	//This function draws image
 	function drawImageOnCanvas() {
 		var img = new Image();
-		img.src = https: "unsplash-funny-golden-retriever-side-eye-richard-burlton.jpg";
+		img.src = "https:unsplash-funny-golden-retriever-side-eye-richard-burlton.jpg";
 		img.onload = function() {
 			ctx.drawImage(img, 75, 220, 150, 150);
 		};
 	}
 	//This function clears canvas
 	function clearCanvas() {
-		ctx.clearRect(0, 0, canvas,width, canvas.height);
+		ctx.clearRect(0, 0, canvas.width, canvas.height);
 	}
 </script>
 <body>
