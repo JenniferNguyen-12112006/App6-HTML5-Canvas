@@ -84,7 +84,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		img.src = "https://images.unsplash.com/photo-1591160674255-fc849b78d7d5?auto=format&fit=crop&q=80&w=500";
 		// Only draw after imgage has fully loaded
 		img.onload = function() {
-			ctx.drawImage(img, 50, 240, 220, 150);
+			ctx.drawImage(img, 40, 240, 220, 150);
 		};
 	}
 	//This function clears canvas
@@ -107,7 +107,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	<!-- BUTTONS -->
 	<button onclick="drawRect()">Draw Rectangle</button>
 	<button onclick="drawText()">Show name</button>
-	<button onclick="drawImageOnCanvas()">Load Image</button>
+	<button onclick="loadImage()">Load Image</button>
 	<button onclick="clearCanvas()">Clear Canvas</button>
 	
 	<div class="w3-padding-32" style="font-size: 12px; max-width: 600px; margin: auto;">	
