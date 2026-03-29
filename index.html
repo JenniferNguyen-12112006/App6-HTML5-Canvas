@@ -29,8 +29,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
       <title>App6---HTML5-Canvas</title>  
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="apple-mobile-web-app-capable" content="yes">
-      <link rel="stylesheet" href="w3.css">
-      <link rel="stylesheet" href="w3-colors-flat.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
    </head> 
 
 
@@ -81,7 +81,8 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	function drawImageOnCanvas() {
 		var img = new Image();
 		img.crossOrigin = "Anonymous";
-		img.src = "https://images.unsplash.com/photo-1591160674255-fc849b78d7d5?q=80&w=1000&auto=format&fit=crop"; // adds image
+		img.src = "https://images.unsplash.com/photo-1591160674255-fc849b78d7d5?q=80&w=1000&auto=format&fit=crop";
+		// This tells the browser to wait until the file is 100% ready
 		img.onload = function() {
 			ctx.drawImage(img, 75, 220, 150, 150);
 		};
